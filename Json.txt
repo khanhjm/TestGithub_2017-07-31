@@ -1,0 +1,46 @@
+MongoDB - cơ sở dữ liệu cho NodeJS
+
+
+node --debug-brk --inspect app.js  
+
+JSON là một kiểu dữ liệu 
+-- để thay thế dữ liệu XML ( dữ liệu truyền tải qua mạng http)
+-- khi tải qua mạng cần chuẩn hóa theo dữ liệu JSON - là một giao thức đóng gói gói tin.
+
+ex: http://jsoneditoronline.org/
+https://adobe.github.io/Spry/samples/data_region/JSONDataSetSample.html
+https://freetuts.net/json-la-gi-cau-truc-chuoi-json-236.html
+https://www.w3schools.com/js/js_loop_while.asp
+
+cài đặt packages Express cho dự án mới.
+http://expressjs.com/en/starter/installing.html
+npm install express --save
+
+
+khi express gửi chuỗi json đến server thì body-parser chuyển sang object ở server
+npm install body-parser --save
+https://www.npmjs.com/package/body-parser-json
+
+
+
+các loại view để xem json và các đối tượng
+	jade
+	lodash
+	handlebars (đc đánh giá là tốt nhất bây giờ) 
+			npm install --save handlebars
+			http://handlebarsjs.com/installation.html
+			
+			
+gói đọc file.			
+https://www.tutorialspoint.com/nodejs/nodejs_file_system.htm
+fs nodejs 
+
+- cài JSONStream và consolidate
+	npm install JSONStream --save
+	npm install consolidate --save
+	
+	-- cai hbs
+	npm install hbs --save
+	
+	-- lodash:
+	npm i --save lodash
