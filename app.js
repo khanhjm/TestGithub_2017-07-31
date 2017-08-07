@@ -15,6 +15,9 @@ app.use('/profilepics', express.static('images'));
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+//app.get('/favico.ico')
+
 app.get('/', (req, res) => {
     var users = [];
     fs.readdir('users', function (err, files) {
