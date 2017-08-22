@@ -1,0 +1,34 @@
+<div class="panel-body">
+    <form method="POST" action="/user/add" class="form-horizontal">
+        <table cellpadding="11">
+            <tr>
+                <td class="col-sm-2 control-label">Name</td>
+                <td><input type="text" class="form-control" name="name" required></td>
+            </tr>
+            <tr>
+                <td class="col-sm-2 control-label">User Name</td>
+                <td><input type="text" class="form-control" name="username" required></td>
+            </tr>
+            <tr>
+                <td class="col-sm-2 control-label">Password</td>
+                <td><input type="password" class="form-control" name="password" required></td>
+            </tr>
+            <tr>
+                <td class="col-sm-2 control-label">Email</td>
+                <td><input type="text" class="form-control" name="email" required></td>
+            </tr>
+            <tr>
+                <td class="col-sm-2 control-label">Location</td>
+                <td><input type="text" class="form-control" name="location" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    &nbsp; <input type="submit" name="submit" value="Save"> &nbsp; {{!-- <input type="submit" value="Cancel"
+                        class="cancel" method="get" action="/allUser"> &nbsp; --}}
+                    <a href="/user" class="badge bg-success">Cancel</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

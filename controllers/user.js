@@ -1,9 +1,18 @@
 const express = require('express');
 const router = express.Router();
-var Userdata = require('../models/user');
-router.post('/user', Userdata.addUser);
-router.get('/user', Userdata.getAllUser);
-router.delete('/delete/:id', Userdata.deleteUser);
-router.put('/update/:id', Userdata.updateUser);
-router.get('/user/:id', Userdata.getUserByID);;
+
+var userData = require('../models/user')
+
+router.get('/', userData.getAllUser);
+
+router.get('/add', function(req, res){
+    res.render('user/addUser'); // render vafo view addUser
+})
+router.post('/add', userData.addUser);
+
+router.get('/delete/:id', userData.deleteUser)
+
+router.get('/edit/:id', userData.getUserById);
+router.post('/edit/:id', userData.updateUser);
+
 module.exports = router;
